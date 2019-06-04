@@ -1,0 +1,22 @@
+.SUFFIXES : .c .o
+OBJECTS = main.o read.o write.o
+SRCS = main.c read.c write.c
+
+CC = gcc
+CFLAGS = -g -c
+TARGET = test
+INC = -I./include
+
+$(TARGET) : $(OBJECTS)
+	$(CC) -o $(TARGET) $(OBJECTS)
+
+.c.o:
+	$(CC) $(INC) $(CFLAGS) $<
+
+clean:
+	rm -rf $(OBJECTS) $(TARGET) core
+
+main.o : io.h main.c
+read.o : io.h read.c
+write.o: io.h write.c
+ 

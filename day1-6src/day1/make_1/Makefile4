@@ -1,0 +1,17 @@
+.SUFFIXES : .c .o
+OBJS = main.o read.o write.o
+SRCS = $(OBJS:.o=.c)
+
+CC = gcc
+CFLAGS = -g -c
+TARGET = test
+INC = -I./include
+
+$(TARGET) : $(OBJS)
+	$(CC) -o $(TARGET) $(OBJS)
+
+clean:
+	rm -rf $(OBJS) $(TARGET) core
+ 
+dep:
+	$(CC) -M $(SRCS)

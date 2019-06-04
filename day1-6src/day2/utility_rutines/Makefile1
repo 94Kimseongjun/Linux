@@ -1,0 +1,15 @@
+.SUFFIXES : .c .o
+CC = gcc
+CFLAGS = -g -c
+
+
+all: strlen_ex strlen_ex2 
+
+strlen_ex : 
+	$(CC) -o $* $<
+
+clean:
+	rm -rf $(OBJS) $(TARGET) core
+ 
+dep:
+	$(CC) -M $(SRCS)

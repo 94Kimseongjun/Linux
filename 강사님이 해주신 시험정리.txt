@@ -1,0 +1,78 @@
+1장/gcc -I 로 헤더 인클루드
+
+1장/makefile: 매크로,?
+
+1장/makefile: 확장자 규칙, 내부매크로
+
+
+2장/문자열 길이 계산 p9
+
+2장/문자열 비교, 복사 계산 p22
+
+
+
+2장/문자열 탐색 p40
+
+2장/malloc P62,63
+
+
+
+
+3장/디스크파일: 부트블록, 아이노드, 데이터 블록, 파일테이블, 디스크립터 테이블,
+
+3장/파일플래그: read1.c, append.c
+
+3장/dup.c, dup2c
+
+
+4장/fopen.c 문자열로 열기
+
+4장/문자단위, 스트림 읽기 함수
+
+
+
+
+5장/stat 구조체 : stat.c, changemode.c
+
+5장/stat 구조체 , changemode.c
+
+5장/dir.c,?
+
+5장/rename.c
+
+
+6장/mmap: mmcp.c?
+
+
+
+
+7장/tme.c
+
+
+8장/로그인, 유효아이디
+
+8장/utmp, setutent.c?
+
+
+
+
+11장/39쪽 부모-자식 맞는지?, fork.c
+
+11장/48, vforc.c
+
+11장/waitpicd.c
+
+4장/형식화 입출력: 36~40
+
+
+10장/시그널 kill 로 프로세스 ?
+
+
+10장/시스널 세트: posix_sig_basic.c
+
+10장/시스널 마스크
+
+
+
+
+ex_fork_sum.c : 차일드 exit() -> wait()
